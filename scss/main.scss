@@ -1,0 +1,10 @@
+/*
+* Note:
+* Watch SASS extension doesn't support @use and @forward.
+* Watch your sass with the terminal:
+*    sass --watch scss:css
+*/
+
+@use '../scss/base';
+@use '../scss/utilities';
+@use '../scss/layout';

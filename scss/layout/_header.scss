@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-navigation {
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparentize($color-white, 0.75);
+
+  a {
+    text-decoration: none;
+  }
+}

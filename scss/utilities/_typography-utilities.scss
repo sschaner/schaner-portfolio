@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.ff-barlow {
+  font-family: $barlow-font-stack;
+}
+
+.ff-barlow-condensed {
+  font-family: $barlow-condensed-font-stack;
+}
+
+.ff-bellefair {
+  font-family: $bellefair-font-stack;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35;
+}
