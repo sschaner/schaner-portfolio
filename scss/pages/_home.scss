@@ -1,0 +1,13 @@
+.home {
+  background: url('../../assets/home/bike-phone-background.png');
+}
+
+.home-container {
+  &--leading-text {
+    font-size: 1.3rem;
+  }
+
+  &--name {
+    font-size: 2.5rem;
+  }
+}
