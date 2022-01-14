@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "title": "Point of Service Console App",
+      "images": [
+        "/assets/portfolio/pos-image-1.png",
+        "/assets/portfolio/pos-image-2.png",
+        "/assets/portfolio/pos-image-3.png"
+      ],
+      "description": "I collaborated with a team of fellow Grand Circus students to develop a point of service console app. The app reads and writes from a text file, displays the products, allows the user to choose which products they wish to buy, and adds them to a cart to buy with their chosen payment method. An employee has the ability to add products to the text file database.",
+      "languages": ["C#"],
+      "website": "https://www.waveimpactcapitalgroup.com"
+    },
+    {
+      "title": "Wave Impact Capital Group",
+      "images": [
+        "/assets/portfolio/wave-impact-image-1.png",
+        "/assets/portfolio/wave-impact-image-2.png",
+        "/assets/portfolio/wave-impact-image-3.png"
+      ],
+      "description": "I designed and developed a website for Wave Impact Capital Group. The client wanted a responsive website that showcased what their company does to help people gain passive income through apartment investing. They wanted to incorporate videos and pages for written articles as well.",
+      "languages": ["HTML5", "CSS3/SASS", "Bootstrap", "JavaScript"],
+      "website": ""
+    },
+    {
+      "title": "MERN eCommerce App",
+      "images": [
+        "/assets/portfolio/mern-ecommerce-image-1.png",
+        "/assets/portfolio/mern-ecommerce-image-2.png",
+        "/assets/portfolio/mern-ecommerce-image-3.png"
+      ],
+      "description": "I learned from a Udemy class how to create an eCommerce app using the MERN stack. The app displays the latest products for the user to shop. The user can see the details of chosen products. They can then add as many as they wish to the cart. The app uses PayPal sandbox to process ordering.",
+      "languages": [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node",
+        "HTML5",
+        "CSS3",
+        "Bootstrap"
+      ]
+    },
+    {
+      "title": "Recipe App App",
+      "images": [
+        "/assets/portfolio/recipe-app-image-1.png",
+        "/assets/portfolio/recipe-app-image-2.png",
+        "/assets/portfolio/recipe-app-image-3.png"
+      ],
+      "description": "I learned from a Udemy class how to create a recipe app. The app uses Angular for the functionality and connection to the Firebase database. The user signs up with an email and password. They are then able to add recipes with ingredients. The user is also able to go through the recipes and add ingredients needed to their shopping list. Items in their shopping list can be updated and deleted.",
+      "languages": ["Angular", "Firebase", "HTML5", "CSS", "Bootstrap"]
+    },
+    {
+      "title": "Vacation Tracker",
+      "images": [
+        "/assets/portfolio/vacation-tracker-image-1.png",
+        "/assets/portfolio/vacation-tracker-image-2.png",
+        "/assets/portfolio/vacation-tracker-image-3.png"
+      ],
+      "description": "I learned from a Udemy class how to create an app that allows a logged in user to add vacations that they've taken to a database. The location of the vaction will be filled in on the United States map. A user is also able to upload a picture of the trip. The user can search vacations that other users have posted and rate them.",
+      "languages": [
+        "Node",
+        "Express",
+        "MongoDB",
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "JavaScript"
+      ]
+    }
+  ]
+}
