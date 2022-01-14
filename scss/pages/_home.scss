@@ -1,13 +1,82 @@
-.home {
-  background: url('../../assets/home/bike-phone-background.png');
+@use '../abstracts' as *;
+
+.background-image {
+  background-position: -200px 0px;
+  background-image: url('../../assets/home/bike-vertical.jpg');
+}
+
+@media (min-width: 561px) {
+  .background-image {
+    background-position: 0px 0px;
+    background-image: url('../../assets/home/bike-horizontal-medium.jpg');
+  }
+}
+
+@media (min-width: 1001px) {
+  .background-image {
+    background: url('../../assets/home/bike-horizontal.jpg') no-repeat center
+      center fixed;
+    background-size: cover;
+  }
 }
 
 .home-container {
+  &--leading-text,
+  &--name {
+    text-align: center;
+  }
+
   &--leading-text {
     font-size: 1.3rem;
   }
 
   &--name {
     font-size: 2.5rem;
+  }
+
+  &--leading-text {
+    font-size: 1.5em;
+  }
+
+  &--name {
+    font-size: 3.5em;
+
+    @media (min-width: 768px) {
+      font-size: 5em;
+    }
+  }
+
+  &--content {
+    padding: 0.5rem;
+    border-radius: 5px;
+    @media (min-width: 561px) {
+      background: transparentize($color-white, 0.5);
+    }
+  }
+
+  @media (min-width: 1001px) {
+    &--leading-text,
+    &--name {
+      text-align: left;
+    }
+
+    &--content {
+      max-width: 70%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &--content {
+      max-width: 50%;
+    }
+  }
+}
+
+.large-button {
+  position: absolute;
+  bottom: 15vh;
+
+  @media (min-width: 1001px) {
+    right: 15vw;
   }
 }
