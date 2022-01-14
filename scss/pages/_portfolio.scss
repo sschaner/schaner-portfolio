@@ -1,0 +1,33 @@
+.page-title {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li + li,
+.project-button {
+  margin-left: 1rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'project-preview-container'
+    'project-content-container';
+
+  @media (min-width: 1000px) {
+    grid-template-areas: 'project-preview-container project-content-container';
+  }
+}
+
+.project-preview-container {
+  grid-area: project-preview-container;
+}
+
+.project-content-container {
+  grid-area: project-content-container;
+}
