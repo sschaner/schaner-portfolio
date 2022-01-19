@@ -7,6 +7,10 @@ const carouselImage2 = document.querySelector('#carousel-image-2');
 const carouselImage3 = document.querySelector('#carousel-image-3');
 const portfolioTitle = document.querySelector('.portfolio-info--title');
 const portfolioContent = document.querySelector('.portfolio-info--content');
+const portfolioLanguageList = document.querySelector('#languages-list');
+const portfolioLanguageItem = document.querySelector(
+  '.languages-list--language'
+);
 
 navToggle.addEventListener('click', navigationToggle);
 
@@ -52,6 +56,7 @@ function changeTabFocus(e) {
 }
 
 function getProjectInformation(e) {
+  removeElementsByClass('languages-list--language');
   const targetTab = e.target;
   const targetTabIndex = targetTab.getAttribute('tabindex');
   fetch('data.json')
@@ -62,35 +67,19 @@ function getProjectInformation(e) {
       carouselImage1.src = data.projects[targetTabIndex].images[0];
       carouselImage2.src = data.projects[targetTabIndex].images[1];
       carouselImage3.src = data.projects[targetTabIndex].images[2];
+
+      data.projects[targetTabIndex].languages.forEach((item) => {
+        let li = document.createElement('li');
+        li.classList.add('languages-list--language');
+        li.innerText = item;
+        portfolioLanguageList.appendChild(li);
+      });
     });
-  // console.log(targetTabIndex);
-  // const targetPanel = targetTab.getAttribute('aria-controls');
-  // console.log(targetPanel);
-  // const targetImage = targetTab.getAttribute('data-image');
-  // console.log(targetImage);
-
-  // const tabContainer = targetTab.parentNode;
-  // const mainContainer = tabContainer.parentNode;
-
-  // tabContainer
-  //   .querySelector('[aria-selected="true"]')
-  //   .setAttribute('aria-selected', false);
-
-  // targetTab.setAttribute('aria-selected', true);
-
-  // hideContent(mainContainer, '[role="tabpanel"]');
-  // showContent(mainContainer, [`#${targetPanel}`]);
-
-  // hideContent(mainContainer, '[role="carouselImage"]');
-  // showContent(mainContainer, [`#${targetImage}`]);
 }
 
-function hideContent(parent, content) {
-  parent
-    .querySelectorAll(content)
-    .forEach((item) => item.setAttribute('hidden', true));
-}
-
-function showContent(parent, content) {
-  parent.querySelector(content).removeAttribute('hidden');
+function removeElementsByClass(className) {
+  const elements = document.getElementsByClassName(className);
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
+  }
 }
