@@ -8,9 +8,7 @@ const carouselImage3 = document.querySelector('#carousel-image-3');
 const portfolioTitle = document.querySelector('.portfolio-info--title');
 const portfolioContent = document.querySelector('.portfolio-info--content');
 const portfolioLanguageList = document.querySelector('#languages-list');
-const portfolioLanguageItem = document.querySelector(
-  '.languages-list--language'
-);
+const portfolioIconList = document.querySelector('#project-icon-list');
 
 navToggle.addEventListener('click', navigationToggle);
 
@@ -57,6 +55,7 @@ function changeTabFocus(e) {
 
 function getProjectInformation(e) {
   removeElementsByClass('languages-list--language');
+  removeElementsByClass('project-icon-list--icon');
   const targetTab = e.target;
   const targetTabIndex = targetTab.getAttribute('tabindex');
   fetch('data.json')
@@ -73,6 +72,26 @@ function getProjectInformation(e) {
         li.classList.add('languages-list--language');
         li.innerText = item;
         portfolioLanguageList.appendChild(li);
+      });
+
+      let iconIndex = 0;
+      data.projects[targetTabIndex].outsideLinks.forEach((item) => {
+        let li = document.createElement('li');
+        let a = document.createElement('a');
+        a.href = item;
+        let i = document.createElement('i');
+        li.classList.add('project-icon-list--icon');
+        li.appendChild(a);
+        a.appendChild(i);
+        if (iconIndex == 0) {
+          i.classList.add('fab');
+          i.classList.add('fa-github');
+        } else if (iconIndex == 1) {
+          i.classList.add('fas');
+          i.classList.add('fa-globe');
+        }
+        portfolioIconList.appendChild(li);
+        iconIndex++;
       });
     });
 }

@@ -354,6 +354,52 @@ ul li + li,
   grid-area: project-content-container;
 }
 
+.about-pictures-container {
+  justify-content: center;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-areas: "cyclist-picture runner-picture" "camper-picture gamer-picture" "coder-picture traveler-picture" "green-energy-picture teacher-picture" "environmentalist-picture .";
+}
+.about-pictures-container .picture-container--caption {
+  background: #ffffff;
+}
+
+#cyclist-picture {
+  grid-area: cyclist-picture;
+}
+
+#runner-picture {
+  grid-area: runner-picture;
+}
+
+#camper-picture {
+  grid-area: camper-picture;
+}
+
+#gamer-picture {
+  grid-area: gamer-picture;
+}
+
+#coder-picture {
+  grid-area: coder-picture;
+}
+
+#traveler-picture {
+  grid-area: traveler-picture;
+}
+
+#green-energy-picture {
+  grid-area: green-energy-picture;
+}
+
+#teacher-picture {
+  grid-area: teacher-picture;
+}
+
+#environmentalist-picture {
+  grid-area: environmentalist-picture;
+}
+
 /*
 * Note:
 * Watch SASS extension doesn't support @use and @forward.

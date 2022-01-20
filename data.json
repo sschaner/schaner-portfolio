@@ -9,7 +9,9 @@
       ],
       "description": "I collaborated with a team of fellow Grand Circus students to develop a point of service console app. The app reads and writes from a text file, displays the products, allows the user to choose which products they wish to buy, and adds them to a cart to buy with their chosen payment method. An employee has the ability to add products to the text file database.",
       "languages": ["C#"],
-      "website": "https://www.waveimpactcapitalgroup.com"
+      "outsideLinks": [
+        "https://github.com/ztata/GC-AHBC-ZT-SS-AC-midtermProject"
+      ]
     },
     {
       "title": "Wave Impact Capital Group",
@@ -20,7 +22,10 @@
       ],
       "description": "I designed and developed a website for Wave Impact Capital Group. The client wanted a responsive website that showcased what their company does to help people gain passive income through apartment investing. They wanted to incorporate videos and pages for written articles as well.",
       "languages": ["HTML5", "CSS3/SASS", "Bootstrap", "JavaScript"],
-      "website": ""
+      "outsideLinks": [
+        "https://www.waveimpactcapitalgroup.com",
+        "https://github.com/sschaner/waveImpactCapitalGroup2"
+      ]
     },
     {
       "title": "MERN eCommerce App",
@@ -38,17 +43,25 @@
         "HTML5",
         "CSS3",
         "Bootstrap"
+      ],
+      "outsideLinks": [
+        "https://schanerproshopapp.herokuapp.com",
+        "https://github.com/sschaner/proShop"
       ]
     },
     {
-      "title": "Recipe App App",
+      "title": "Recipe App",
       "images": [
         "/assets/portfolio/recipe-app-image-1.png",
         "/assets/portfolio/recipe-app-image-2.png",
         "/assets/portfolio/recipe-app-image-3.png"
       ],
       "description": "I learned from a Udemy class how to create a recipe app. The app uses Angular for the functionality and connection to the Firebase database. The user signs up with an email and password. They are then able to add recipes with ingredients. The user is also able to go through the recipes and add ingredients needed to their shopping list. Items in their shopping list can be updated and deleted.",
-      "languages": ["Angular", "Firebase", "HTML5", "CSS", "Bootstrap"]
+      "languages": ["Angular", "Firebase", "HTML5", "CSS", "Bootstrap"],
+      "outsideLinks": [
+        "https://ng-course-recipe-book-cbecc.web.app",
+        "https://github.com/sschaner/angularRecipeApp"
+      ]
     },
     {
       "title": "Vacation Tracker",
@@ -66,6 +79,10 @@
         "CSS3",
         "Bootstrap",
         "JavaScript"
+      ],
+      "outsideLinks": [
+        "https://vacationtracker.herokuapp.com/",
+        "https://github.com/sschaner/VactationTracker"
       ]
     }
   ]
