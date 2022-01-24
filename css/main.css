@@ -354,6 +354,10 @@ ul li + li,
   grid-area: project-content-container;
 }
 
+#languages-list {
+  flex-wrap: wrap;
+}
+
 .about-pictures-container {
   justify-content: center;
   display: grid;

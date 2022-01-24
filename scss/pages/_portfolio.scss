@@ -31,3 +31,7 @@ ul li + li,
 .project-content-container {
   grid-area: project-content-container;
 }
+
+#languages-list {
+  flex-wrap: wrap;
+}
