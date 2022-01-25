@@ -14,7 +14,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  background: transparentize($color-white, 0.5);
+  background: transparentize($color-white, 0.2);
 
   a {
     text-decoration: none;
@@ -103,17 +103,21 @@
   cursor: pointer;
   padding: 0.5rem 0;
   border: 0;
-  border-bottom: 0.2rem solid $color-yellow;
+  border-bottom: 0.2rem solid $color-white;
   background-color: transparent;
+
+  @media (max-width: 35rem) {
+    margin-left: 0;
+  }
 }
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-  border-color: transparentize($color-white, 0.95);
+  border-color: transparentize($color-yellow, 0.6);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected='true'] {
-  color: $color-white;
-  border-color: $color-white;
+  color: $color-yellow;
+  border-color: $color-yellow;
 }

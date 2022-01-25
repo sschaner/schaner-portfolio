@@ -1,8 +1,10 @@
 @use '../abstracts' as *;
 
 .about-pictures-container {
+  margin: 1rem 0;
   justify-content: center;
   display: grid;
+  grid-area: about-pictures-container;
   grid-gap: 4rem;
   grid-template-areas:
     'cyclist-picture runner-picture'
@@ -11,9 +13,61 @@
     'green-energy-picture teacher-picture'
     'environmentalist-picture .';
 
+  @media (min-width: 744px) {
+    grid-template-areas:
+      'cyclist-picture runner-picture camper-picture'
+      'gamer-picture coder-picture traveler-picture'
+      'green-energy-picture teacher-picture environmentalist-picture';
+  }
+
   .picture-container {
-    &--caption {
-      background: $color-white;
+    & > div {
+      @media screen and (max-width: 1199px) {
+        opacity: 1;
+      }
+      background-color: $color-white;
+    }
+
+    @media (min-width: 1200px) {
+      position: relative;
+      overflow: hidden;
+
+      & > img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      & > div {
+        position: absolute;
+        inset: 0;
+        font-size: 1rem;
+        padding: 1rem;
+        background: rgba(255, 222, 40, 0.4);
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      & > img,
+      & > &--caption {
+        transition: 200ms ease-in-out;
+      }
+
+      &:hover > img.blur {
+        filter: blur(5px);
+      }
+
+      & > div.fade {
+        opacity: 0;
+      }
+
+      &:hover > div.fade {
+        opacity: 1;
+      }
     }
   }
 }
@@ -52,4 +106,64 @@
 
 #environmentalist-picture {
   grid-area: environmentalist-picture;
+}
+
+.about-content-container {
+  grid-area: about-content-container;
+  .about-content-title-group {
+    &--title {
+      margin: 1rem 0;
+      text-align: center;
+      letter-spacing: 0.45rem;
+    }
+
+    &--picture {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 744px) {
+      display: flex;
+      align-items: center;
+
+      &--title {
+        flex-grow: 0;
+      }
+
+      &--divider {
+        flex-grow: 1;
+        height: 1px;
+        margin: 0 1rem;
+        background-color: $color-dark;
+        opacity: 0.25;
+      }
+
+      &--picture {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  &--text {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 744px) {
+    .divider-1 {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page-title {
+    grid-area: about-page-title;
+  }
+
+  .about-container {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas:
+      'about-page-title .'
+      'about-pictures-container about-content-container';
+  }
 }

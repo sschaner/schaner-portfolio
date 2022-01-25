@@ -50,6 +50,10 @@ select {
   background-color: #c8e3ff;
 }
 
+.bg-color-dark {
+  background-color: #00040c;
+}
+
 .bg-color-white {
   background-color: #ffffff;
 }
@@ -154,7 +158,7 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 }
 .primary-navigation a {
   text-decoration: none;
@@ -236,19 +240,24 @@ select {
   cursor: pointer;
   padding: 0.5rem 0;
   border: 0;
-  border-bottom: 0.2rem solid #ffde28;
+  border-bottom: 0.2rem solid #ffffff;
   background-color: transparent;
+}
+@media (max-width: 35rem) {
+  .underline-indicators > * {
+    margin-left: 0;
+  }
 }
 
 .underline-indicators > *:hover,
 .underline-indicators > *:focus {
-  border-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 222, 40, 0.4);
 }
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected=true] {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #ffde28;
+  border-color: #ffde28;
 }
 
 .background-image {
@@ -359,13 +368,61 @@ ul li + li,
 }
 
 .about-pictures-container {
+  margin: 1rem 0;
   justify-content: center;
   display: grid;
+  grid-area: about-pictures-container;
   grid-gap: 4rem;
   grid-template-areas: "cyclist-picture runner-picture" "camper-picture gamer-picture" "coder-picture traveler-picture" "green-energy-picture teacher-picture" "environmentalist-picture .";
 }
-.about-pictures-container .picture-container--caption {
-  background: #ffffff;
+@media (min-width: 744px) {
+  .about-pictures-container {
+    grid-template-areas: "cyclist-picture runner-picture camper-picture" "gamer-picture coder-picture traveler-picture" "green-energy-picture teacher-picture environmentalist-picture";
+  }
+}
+.about-pictures-container .picture-container > div {
+  background-color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .about-pictures-container .picture-container > div {
+    opacity: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .about-pictures-container .picture-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .about-pictures-container .picture-container > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about-pictures-container .picture-container > div {
+    position: absolute;
+    inset: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    background: rgba(255, 222, 40, 0.4);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-pictures-container .picture-container > img, .about-pictures-container .picture-container > .about-pictures-container .picture-container--caption {
+    transition: 200ms ease-in-out;
+  }
+  .about-pictures-container .picture-container:hover > img.blur {
+    filter: blur(5px);
+  }
+  .about-pictures-container .picture-container > div.fade {
+    opacity: 0;
+  }
+  .about-pictures-container .picture-container:hover > div.fade {
+    opacity: 1;
+  }
 }
 
 #cyclist-picture {
@@ -404,6 +461,56 @@ ul li + li,
   grid-area: environmentalist-picture;
 }
 
+.about-content-container {
+  grid-area: about-content-container;
+}
+.about-content-container .about-content-title-group--title {
+  margin: 1rem 0;
+  text-align: center;
+  letter-spacing: 0.45rem;
+}
+.about-content-container .about-content-title-group--picture {
+  margin: 0 auto;
+}
+@media (min-width: 744px) {
+  .about-content-container .about-content-title-group {
+    display: flex;
+    align-items: center;
+  }
+  .about-content-container .about-content-title-group--title {
+    flex-grow: 0;
+  }
+  .about-content-container .about-content-title-group--divider {
+    flex-grow: 1;
+    height: 1px;
+    margin: 0 1rem;
+    background-color: #00040c;
+    opacity: 0.25;
+  }
+  .about-content-container .about-content-title-group--picture {
+    flex-grow: 0;
+  }
+}
+.about-content-container--text {
+  margin-bottom: 1rem;
+}
+@media (min-width: 744px) {
+  .about-content-container .divider-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page-title {
+    grid-area: about-page-title;
+  }
+
+  .about-container {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-areas: "about-page-title ." "about-pictures-container about-content-container";
+  }
+}
 /*
 * Note:
 * Watch SASS extension doesn't support @use and @forward.

@@ -43,14 +43,14 @@
               >Home</a
             >
           </li>
-          <li class="active">
+          <li>
             <a
               href="portfolio.html"
               class="text-color-dark text-uppercase letter-spacing-2"
               >Portfolio</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               href="about.html"
               class="text-color-dark text-uppercase letter-spacing-2"
@@ -69,69 +69,97 @@
     </header>
 
     <main class="about-container container">
-      <h1 class="page-title text-uppercase ff-barlow-condensed">Who Am I?</h1>
+      <h1
+        class="page-title about-page-title text-uppercase ff-barlow-condensed"
+      >
+        Who Am I?
+      </h1>
       <div class="about-pictures-container">
         <div id="cyclist-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/biking.png"
             alt="A yellow bike on the beach"
           />
-          <div class="picture-container--caption text-center">Cyclist</div>
+          <div class="picture-container--caption fade text-center">Cyclist</div>
         </div>
 
         <div id="runner-picture" class="picture-container">
-          <img src="/assets/about/running.png" alt="Running shoes" />
-          <div class="picture-container--caption text-center">Runner</div>
+          <img
+            class="blur"
+            src="/assets/about/running.png"
+            alt="Running shoes"
+          />
+          <div class="picture-container--caption fade text-center">Runner</div>
         </div>
 
         <div id="camper-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/camping.png"
             alt="A green tent on the beach"
           />
-          <div class="picture-container--caption text-center">Camper</div>
+          <div class="picture-container--caption fade text-center">Camper</div>
         </div>
 
         <div id="gamer-picture" class="picture-container">
-          <img src="/assets/about/gaming.png" alt="A black keyboard" />
-          <div class="picture-container--caption text-center">Gamer</div>
+          <img
+            class="blur"
+            src="/assets/about/gaming.png"
+            alt="A black keyboard"
+          />
+          <div class="picture-container--caption fade text-center">Gamer</div>
         </div>
 
         <div id="coder-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/coding.png"
             alt="Someone writing code on a laptop"
           />
-          <div class="picture-container--caption text-center">Coder</div>
+          <div class="picture-container--caption fade text-center">Coder</div>
         </div>
 
         <div id="traveler-picture" class="picture-container">
-          <img src="/assets/about/traveling.png" alt="A hand holding a globe" />
-          <div class="picture-container--caption text-center">Traveler</div>
+          <img
+            class="blur"
+            src="/assets/about/traveling.png"
+            alt="A hand holding a globe"
+          />
+          <div class="picture-container--caption fade text-center">
+            Traveler
+          </div>
         </div>
 
         <div id="green-energy-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/clean-energy.png"
             alt="An elective vehicle being charged"
           />
-          <div class="picture-container--caption text-center">Green Energy</div>
+          <div class="picture-container--caption fade text-center fade">
+            Green Energy
+          </div>
         </div>
 
         <div id="teacher-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/teaching-others.png"
             alt="Someone teaching someone else code"
           />
-          <div class="picture-container--caption text-center">Teacher</div>
+          <div class="picture-container--caption fade text-center fade">
+            Teacher
+          </div>
         </div>
 
         <div id="environmentalist-picture" class="picture-container">
           <img
+            class="blur"
             src="/assets/about/saving-environment.png"
             alt="A hand holding a plant in dirt"
           />
-          <div class="picture-container--caption text-center">
+          <div class="picture-container--caption fade text-center fade">
             Environmentalist
           </div>
         </div>
@@ -144,38 +172,42 @@
           >
             Steven Schaner
           </h1>
+          <div class="about-content-title-group--divider"></div>
           <img
             id="profile-picture"
+            class="about-content-title-group--picture"
             src="/assets/about/profile-picture.png"
             alt="Headshot of Steven Schaner"
           />
         </div>
-        <hr />
-        <p>
+        <hr class="about-content-container--divider divider-1 bg-color-dark" />
+        <p class="about-content-container--text">
           I’m a junior developer that is switching careers from teaching to
-          development. I’m passionate about development and learning I’m
+          development. I’m passionate about development and learning. I’m
           currently taking a full stack C# ASP.NET Bootcamp with Grand Circus,
           gaining valuable skills that will help me become a better developer.
         </p>
-        <p>
+        <p class="about-content-container--text">
           Ever since my dad kept telling me to turn off the lights if I’m not
           using them, I’ve cared about the environment. I’m the person who has a
           thrill in optimizing my smart thermostat by analyzing the energy
           history.
         </p>
-        <p>
+        <p class="about-content-container--text">
           I take my drive of continuously learning and saving the environment
           into development by working with companies that feel the same. I wish
           to make people’s lives better with smart technology
         </p>
-        <p>
+        <p class="about-content-container--text">
           When I’m not saving the world through technology, I love to stay
           active by biking, running, hiking/camping, and working out. You may
           find me gaming or coding a new site on the PC as well. I also have a
           need to travel and visit the cultures around the world
         </p>
-        <hr />
-        <p>Contact me if you would like me to send you my current resume.</p>
+        <hr class="about-content-container--divider bg-color-dark" />
+        <p class="about-content-container--text">
+          Contact me if you would like me to send you my current resume.
+        </p>
       </div>
     </main>
     <script
