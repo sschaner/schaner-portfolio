@@ -68,13 +68,14 @@ function getProjectInformation(e) {
         let i = document.createElement('i');
         li.classList.add('project-icon-list--icon');
         li.appendChild(a);
+        a.setAttribute('target', '_blank');
         a.appendChild(i);
         if (iconIndex == 0) {
-          i.classList.add('fab');
-          i.classList.add('fa-github');
-        } else if (iconIndex == 1) {
           i.classList.add('fas');
           i.classList.add('fa-globe');
+        } else if (iconIndex == 1) {
+          i.classList.add('fab');
+          i.classList.add('fa-github');
         }
         portfolioIconList.appendChild(li);
         iconIndex++;

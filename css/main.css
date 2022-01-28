@@ -511,6 +511,71 @@ ul li + li,
     grid-template-areas: "about-page-title ." "about-pictures-container about-content-container";
   }
 }
+.contact-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-content-container .contact-content-title-group--title {
+  margin: 1rem 0;
+  text-align: center;
+  letter-spacing: 0.45rem;
+}
+.contact-content-container .contact-content-title-group--picture {
+  margin: 0 auto;
+}
+@media (min-width: 744px) {
+  .contact-content-container .contact-content-title-group {
+    display: flex;
+    align-items: center;
+  }
+  .contact-content-container .contact-content-title-group--title {
+    flex-grow: 0;
+  }
+  .contact-content-container .contact-content-title-group--divider {
+    flex-grow: 1;
+    height: 1px;
+    margin: 0 1rem;
+    background-color: #00040c;
+    opacity: 0.25;
+  }
+  .contact-content-container .contact-content-title-group--picture {
+    flex-grow: 0;
+  }
+}
+.contact-content-container--text {
+  margin-bottom: 1rem;
+}
+.contact-content-container--divider {
+  display: none;
+}
+@media (min-width: 744px) {
+  .contact-content-container--divider {
+    display: block;
+  }
+}
+@media (min-width: 744px) {
+  .contact-content-container .divider-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-page-title {
+    grid-area: contact-page-title;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .contact-content-container,
+.contact-form-container {
+    width: 50%;
+  }
+}
 /*
 * Note:
 * Watch SASS extension doesn't support @use and @forward.

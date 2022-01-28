@@ -1,0 +1,74 @@
+@use '../abstracts' as *;
+
+.contact-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .contact-content-title-group {
+    &--title {
+      margin: 1rem 0;
+      text-align: center;
+      letter-spacing: 0.45rem;
+    }
+
+    &--picture {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 744px) {
+      display: flex;
+      align-items: center;
+
+      &--title {
+        flex-grow: 0;
+      }
+
+      &--divider {
+        flex-grow: 1;
+        height: 1px;
+        margin: 0 1rem;
+        background-color: $color-dark;
+        opacity: 0.25;
+      }
+
+      &--picture {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  &--text {
+    margin-bottom: 1rem;
+  }
+
+  &--divider {
+    display: none;
+    @media (min-width: 744px) {
+      display: block;
+    }
+  }
+
+  @media (min-width: 744px) {
+    .divider-1 {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact-page-title {
+    grid-area: contact-page-title;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .contact-content-container,
+  .contact-form-container {
+    width: 50%;
+  }
+}
