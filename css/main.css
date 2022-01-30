@@ -321,7 +321,7 @@ select {
 
 .large-button {
   position: absolute;
-  bottom: 15vh;
+  bottom: 5vh;
 }
 @media (min-width: 1001px) {
   .large-button {
