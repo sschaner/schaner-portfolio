@@ -40,6 +40,8 @@ function changeTabFocus(e) {
 }
 
 function getProjectInformation(e) {
+  const firstPortfolioButto = document.querySelector('#first-portfolio-button');
+  firstPortfolioButto.setAttribute('aria-selected', false);
   removeElementsByClass('languages-list--language');
   removeElementsByClass('project-icon-list--icon');
   const targetTab = e.target;
@@ -68,6 +70,7 @@ function getProjectInformation(e) {
         let i = document.createElement('i');
         li.classList.add('project-icon-list--icon');
         li.appendChild(a);
+        a.classList.add('link-design');
         a.setAttribute('target', '_blank');
         a.appendChild(i);
         if (iconIndex == 0) {

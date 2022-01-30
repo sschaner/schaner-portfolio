@@ -5,8 +5,18 @@
 *    sass --watch scss:css
 */
 
+@use '../scss/abstracts' as *;
 @use '../scss/base';
 @use '../scss/utilities';
 @use '../scss/components';
 @use '../scss/layout';
 @use '../scss/pages';
+
+.link-design {
+  color: $color-dark;
+
+  &:hover {
+    color: $color-white;
+    opacity: 0.75;
+  }
+}

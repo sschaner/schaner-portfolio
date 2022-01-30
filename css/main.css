@@ -256,7 +256,6 @@ select {
 
 .underline-indicators > .active,
 .underline-indicators > [aria-selected=true] {
-  color: #ffde28;
   border-color: #ffde28;
 }
 
@@ -582,5 +581,12 @@ ul li + li,
 * Watch your sass with the terminal:
 *    sass --watch scss:css
 */
+.link-design {
+  color: #00040c;
+}
+.link-design:hover {
+  color: #ffffff;
+  opacity: 0.75;
+}
 
 /*# sourceMappingURL=main.css.map */
