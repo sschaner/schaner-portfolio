@@ -12,6 +12,10 @@
 @use '../scss/layout';
 @use '../scss/pages';
 
+a:hover {
+  color: $color-dark;
+}
+
 .link-design {
   color: $color-dark;
 

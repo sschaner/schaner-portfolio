@@ -8,11 +8,11 @@
 @media (min-width: 561px) {
   .background-image {
     background-position: 0px 0px;
-    background-image: url('../../assets/home/bike-horizontal-medium.jpg');
+    // background-image: url('../../assets/home/bike-horizontal-medium.jpg');
   }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 900px) {
   .background-image {
     background: url('../../assets/home/bike-horizontal.jpg') no-repeat center
       center fixed;
@@ -49,9 +49,7 @@
   &--content {
     padding: 0.5rem;
     border-radius: 5px;
-    @media (min-width: 561px) {
-      background: transparentize($color-white, 0.5);
-    }
+    background: transparentize($color-white, 0.5);
   }
 
   @media (min-width: 1001px) {
@@ -76,7 +74,17 @@
   position: absolute;
   bottom: 5vh;
 
+  @media (min-width: 300px) {
+    font-size: 2rem;
+    width: 150px;
+  }
+
+  @media (min-width: 700px) {
+    bottom: 25vh;
+  }
+
   @media (min-width: 1001px) {
     right: 15vw;
+    bottom: 15vh;
   }
 }
