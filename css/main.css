@@ -288,7 +288,7 @@ select {
   font-size: 1.5em;
 }
 .home-container--name {
-  font-size: 3.5em;
+  font-size: 2.1em;
 }
 @media (min-width: 768px) {
   .home-container--name {
@@ -320,13 +320,19 @@ select {
 }
 @media (min-width: 300px) {
   .large-button {
+    font-size: 1.5rem;
+    width: 75px;
+  }
+}
+@media (min-width: 350px) {
+  .large-button {
     font-size: 2rem;
     width: 150px;
   }
 }
 @media (min-width: 700px) {
   .large-button {
-    bottom: 25vh;
+    bottom: 45vh;
   }
 }
 @media (min-width: 1001px) {
