@@ -275,6 +275,9 @@ select {
     background-size: cover;
   }
 }
+.home-container {
+  margin-bottom: 1rem;
+}
 .home-container--leading-text, .home-container--name {
   text-align: center;
 }
@@ -314,10 +317,6 @@ select {
   }
 }
 
-.large-button {
-  position: absolute;
-  bottom: 5vh;
-}
 @media (min-width: 300px) {
   .large-button {
     font-size: 1.5rem;
@@ -330,15 +329,16 @@ select {
     width: 150px;
   }
 }
-@media (min-width: 700px) {
-  .large-button {
-    bottom: 45vh;
-  }
-}
 @media (min-width: 1001px) {
   .large-button {
-    right: 15vw;
+    position: absolute;
+    right: 10vw;
     bottom: 15vh;
+  }
+}
+@media (min-width: 1200px) {
+  .large-button {
+    right: 20vw;
   }
 }
 
@@ -423,15 +423,33 @@ ul li + li,
     justify-content: center;
     align-items: center;
   }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  .about-pictures-container .picture-container > div {
+    height: 119.54px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1400px) {
+  .about-pictures-container .picture-container > div {
+    height: 130px;
+  }
+}
+@media (min-width: 1200px) {
   .about-pictures-container .picture-container > img, .about-pictures-container .picture-container > .about-pictures-container .picture-container--caption {
     transition: 200ms ease-in-out;
   }
+}
+@media (min-width: 1200px) {
   .about-pictures-container .picture-container:hover > img.blur {
     filter: blur(5px);
   }
+}
+@media (min-width: 1200px) {
   .about-pictures-container .picture-container > div.fade {
     opacity: 0;
   }
+}
+@media (min-width: 1200px) {
   .about-pictures-container .picture-container:hover > div.fade {
     opacity: 1;
   }

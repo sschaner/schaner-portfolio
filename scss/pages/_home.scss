@@ -21,6 +21,8 @@
 }
 
 .home-container {
+  margin-bottom: 1rem;
+
   &--leading-text,
   &--name {
     text-align: center;
@@ -71,8 +73,8 @@
 }
 
 .large-button {
-  position: absolute;
-  bottom: 5vh;
+  // position: absolute;
+  // bottom: 5vh;
 
   @media (min-width: 300px) {
     font-size: 1.5rem;
@@ -84,12 +86,13 @@
     width: 150px;
   }
 
-  @media (min-width: 700px) {
-    bottom: 45vh;
+  @media (min-width: 1001px) {
+    position: absolute;
+    right: 10vw;
+    bottom: 15vh;
   }
 
-  @media (min-width: 1001px) {
-    right: 15vw;
-    bottom: 15vh;
+  @media (min-width: 1200px) {
+    right: 20vw;
   }
 }

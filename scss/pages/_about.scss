@@ -50,6 +50,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 1200px) {
+          height: 119.54px;
+        }
+
+        @media (min-width: 1400px) {
+          height: 130px;
+        }
       }
 
       & > img,

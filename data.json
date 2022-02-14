@@ -23,8 +23,8 @@
       "description": "I designed and developed a website for Wave Impact Capital Group. The client wanted a responsive website that showcased what their company does to help people gain passive income through apartment investing. They wanted to incorporate videos and pages for written articles as well.",
       "languages": ["HTML5", "CSS3/SASS", "Bootstrap", "JavaScript"],
       "outsideLinks": [
-        "https://www.waveimpactcapitalgroup.com",
-        "https://github.com/sschaner/waveImpactCapitalGroup2"
+        "https://github.com/sschaner/waveImpactCapitalGroup2",
+        "https://www.waveimpactcapitalgroup.com"
       ]
     },
     {
@@ -45,8 +45,8 @@
         "Bootstrap"
       ],
       "outsideLinks": [
-        "https://schanerproshopapp.herokuapp.com",
-        "https://github.com/sschaner/proShop"
+        "https://github.com/sschaner/proShop",
+        "https://schanerproshopapp.herokuapp.com"
       ]
     },
     {
@@ -59,8 +59,8 @@
       "description": "I learned from a Udemy class how to create a recipe app. The app uses Angular for the functionality and connection to the Firebase database. The user signs up with an email and password. They are then able to add recipes with ingredients. The user is also able to go through the recipes and add ingredients needed to their shopping list. Items in their shopping list can be updated and deleted.",
       "languages": ["Angular", "Firebase", "HTML5", "CSS", "Bootstrap"],
       "outsideLinks": [
-        "https://ng-course-recipe-book-cbecc.web.app",
-        "https://github.com/sschaner/angularRecipeApp"
+        "https://github.com/sschaner/angularRecipeApp",
+        "https://ng-course-recipe-book-cbecc.web.app"
       ]
     },
     {
@@ -81,8 +81,8 @@
         "JavaScript"
       ],
       "outsideLinks": [
-        "https://vacationtracker.herokuapp.com/",
-        "https://github.com/sschaner/VactationTracker"
+        "https://github.com/sschaner/VactationTracker",
+        "https://vacationtracker.herokuapp.com/"
       ]
     }
   ]

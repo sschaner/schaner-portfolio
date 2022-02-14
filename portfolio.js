@@ -40,8 +40,13 @@ function changeTabFocus(e) {
 }
 
 function getProjectInformation(e) {
-  const firstPortfolioButto = document.querySelector('#first-portfolio-button');
-  firstPortfolioButto.setAttribute('aria-selected', false);
+  var tabList = e.target.parentNode;
+  var tabListButtons = tabList.children;
+  for (var i = 0; i < tabListButtons.length; i++) {
+    var tabListButton = tabListButtons[i];
+    tabListButton.setAttribute('aria-selected', false);
+  }
+  e.target.setAttribute('aria-selected', true);
   removeElementsByClass('languages-list--language');
   removeElementsByClass('project-icon-list--icon');
   const targetTab = e.target;
@@ -62,7 +67,7 @@ function getProjectInformation(e) {
         portfolioLanguageList.appendChild(li);
       });
 
-      let iconIndex = 0;
+      let iconIndex = 1;
       data.projects[targetTabIndex].outsideLinks.forEach((item) => {
         let li = document.createElement('li');
         let a = document.createElement('a');
@@ -73,12 +78,14 @@ function getProjectInformation(e) {
         a.classList.add('link-design');
         a.setAttribute('target', '_blank');
         a.appendChild(i);
-        if (iconIndex == 0) {
-          i.classList.add('fas');
-          i.classList.add('fa-globe');
-        } else if (iconIndex == 1) {
+        i.classList.add('fa-2x');
+        if (iconIndex == 1) {
           i.classList.add('fab');
           i.classList.add('fa-github');
+        }
+        if (iconIndex == 2) {
+          i.classList.add('fas');
+          i.classList.add('fa-globe');
         }
         portfolioIconList.appendChild(li);
         iconIndex++;
