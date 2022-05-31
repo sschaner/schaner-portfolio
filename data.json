@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "title": "Sunny Trails",
+      "images": [
+        "/assets/portfolio/final-capstone-image-1.png",
+        "/assets/portfolio/final-capstone-image-2.png",
+        "/assets/portfolio/final-capstone-image-3.png"
+      ],
+      "description": "I worked on an Agile team to create an app that searches for trails near a desired location. The result of the search will return weather details of the location, along with a list of trails to ride. The user is able to create an account or login to save a list of trails that they wish to ride. They can remove trails from this list as well. Backend functions written in C# connect to a SQL database on Azure. API's are used to retrieve information about weather and trails, as well as storing user information. This was a final capstone project for a full stack C# .NET bootcamp at Grand Circus.",
+      "languages": [
+        "C#",
+        "ASP.NET",
+        "Entity Framework",
+        "SQL",
+        "API's",
+        "Azure",
+        "Angular",
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "Bootstrap"
+      ],
+      "outsideLinks": [
+        "https://github.com/sschaner/FinalCapstoneFrontEnd",
+        "https://ztssfinalcapstone.azurewebsites.net"
+      ]
+    },
+    {
       "title": "Point of Service Console App",
       "images": [
         "/assets/portfolio/pos-image-1.png",

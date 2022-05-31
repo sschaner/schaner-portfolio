@@ -97,26 +97,26 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="/assets/portfolio/pos-image-1.png"
+                      src="/assets/portfolio/final-capstone-image-1.png"
                       id="carousel-image-1"
                       class="d-block w-100"
-                      alt="Point of Service App, image 1"
+                      alt="Sunny Trails, image 1"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/portfolio/pos-image-2.png"
+                      src="/assets/portfolio/final-capstone-image-2.png"
                       id="carousel-image-2"
                       class="d-block w-100"
-                      alt="Point of Service App, image 2"
+                      alt="Sunny Trails, image 2"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="/assets/portfolio/pos-image-3.png"
+                      src="/assets/portfolio/final-capstone-image-3.png"
                       id="carousel-image-3"
                       class="d-block w-100"
-                      alt="Point of Service App, image 3"
+                      alt="Sunny Trails, image 3"
                     />
                   </div>
                 </div>
@@ -131,13 +131,24 @@
         role="tablist"
         aria-label="project list"
       >
-        <button
+      <button
           aria-selected="true"
           role="tab"
           aria-controls="pos-tab"
           id="first-portfolio-button"
           class="tab-list--button text-uppercase ff-barlow-condensed project-button"
           tabindex="0"
+          data-image="pos-image"
+        >
+          Sunny Trails
+        </button>
+        <button
+          aria-selected="false"
+          role="tab"
+          aria-controls="pos-tab"
+          id="first-portfolio-button"
+          class="tab-list--button text-uppercase ff-barlow-condensed project-button"
+          tabindex="1"
           data-image="pos-image"
         >
           POS App
@@ -147,7 +158,7 @@
           role="tab"
           aria-controls="wave-impact-tab"
           class="tab-list--button text-uppercase ff-barlow-condensed project-button"
-          tabindex="1"
+          tabindex="2"
           data-image="wave-impact-image"
         >
           Wave Impact
@@ -157,7 +168,7 @@
           role="tab"
           aria-controls="mern-ecommerce-tab"
           class="tab-list--button text-uppercase ff-barlow-condensed project-button"
-          tabindex="2"
+          tabindex="3"
           data-image="mern-ecommerce-image"
         >
           MERN eCommerce
@@ -168,7 +179,7 @@
       role="tab"
       aria-controls="recipe-app-tab"
       class="tab-list--button text-uppercase ff-barlow-condensed project-button"
-      tabindex="3"
+      tabindex="4"
       data-image="recipe-app-image"
     >
       Recipe App
@@ -178,7 +189,7 @@
       role="tab"
       aria-controls="vacation-tracker-tab"
       class="tab-list--button text-uppercase ff-barlow-condensed project-button"
-      tabindex="4"
+      tabindex="5"
       data-image="vacation-tracker-image"
     >
       Vacation Tracker
@@ -186,19 +197,20 @@
       </div>
 
       <article class="portfolio-info mt-3" role="tabpanel" id="pos-tab" tabindex="0">
-        <h2 class="portfolio-info--title text-uppercase ff-bellefair">Point of Service Console App</h2>
+        <h2 class="portfolio-info--title text-uppercase ff-bellefair">Sunny Trails</h2>
         <p class="portfolio-info--content ff-barlow mb-3">
-          I collaborated with a team of fellow Grand Circus students to develop a point of service console app. The app reads and writes from a text file, displays the products, allows the user to choose which products they wish to buy, and adds them to a cart to buy with their chosen payment method. An employee has the ability to add products to the text file database.
+          I worked on an Agile team to create an app that searches for trails near a desired location. The result of the search will return weather details of the location, along with a list of trails to ride. The user is able to create an account or login to save a list of trails that they wish to ride. They can remove trails from this list as well. Backend functions written in C# connect to a SQL database on Azure. API's are used to retrieve information about weather and trails, as well as storing user information. This was a final capstone project for a full stack C# .NET bootcamp at Grand Circus.
         </p>
         <div class="languages">
             <h5 class="text-uppercase text-color-white ff-bellefair">Languages Used</h5>
             <ul id="languages-list" class="d-flex ff-barlow">
-                <li class="languages-list--language">C#</li>
+                <li class="languages-list--language">C#, ASP.NET, Entity Framework, SQL, API's, Azure, Angular, HTML, CSS, TypeScript, Bootstrap</li>
             </ul>
           </div>
           <hr>
           <ul id="project-icon-list" class="d-flex ff-barlow">
-            <li class="project-icon-list--icon"><a href="https://github.com/ztata/GC-AHBC-ZT-SS-AC-midtermProject" target="_blank" class="link-design"><i class="fab fa-github fa-2x"></i></a></li>
+            <li class="project-icon-list--icon"><a href="https://github.com/sschaner/FinalCapstoneFrontEnd" target="_blank" class="link-design"><i class="fab fa-github fa-2x"></i></a></li>
+            <li class="project-icon-list--icon"><a href="https://ztssfinalcapstone.azurewebsites.net" target="_blank" class="link-design"><i class="fas fa-globe fa-2x"></i></a></li>
         </ul>
       </article>
 
